@@ -21,7 +21,7 @@
 <meta name="twitter:title" content="Il Ricettario">
 <meta name="twitter:description" content="30 ricette, dagli antipasti ai dolci">
 <meta name="twitter:image" content="https://dandal05.github.io/ricettario/cover.jpg">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8D%BD%EF%B8%8F%3C/text%3E%3C/svg%3E">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=IBM+Plex+Mono:wght@400;500&family=Jost:wght@300;400&display=swap">
 <style>
 :root{--e:cubic-bezier(.22,1,.36,1);--e2:cubic-bezier(.65,0,.35,1);--bg:#0b0b0c;--p:#131315;--l:#2b2a28;--ink:#ebe5d6;--m:#9b968a;--b:#b8955a;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -229,6 +229,12 @@ nav button,.cx,.tb,.bt,#hb{transition:color .4s var(--e),background .4s var(--e)
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-delay:0s!important;animation-iteration-count:1!important;transition-duration:.01ms!important;transition-delay:0s!important}.rv{opacity:1!important;transform:none!important}.rvc .it,.rvc h2,.rvc>.k{opacity:1!important}}
 @media(max-width:560px){.it{grid-template-columns:36px 1fr}.it .mo{grid-column:2}}
 </style>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Il Ricettario">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 </head>
 <body>
 <header>
@@ -413,5 +419,6 @@ apply();
 function stp(){TM.filter(function(o){return o.done}).forEach(function(o){o.e.remove()});TM=TM.filter(function(o){return !o.done});var s=document.getElementById('sp');s.hidden=false;s.classList.remove('on');void s.offsetWidth;s.classList.add('on');setTimeout(function(){s.hidden=true;s.classList.remove('on');ckc()},2400)}
 addEventListener('keydown',function(e){if(e.key=='Escape'){ckc();DG.hidden=true;dr(0)}if(!CK.hidden&&e.key=='ArrowRight')document.getElementById('ckf').click();if(!CK.hidden&&e.key=='ArrowLeft')document.getElementById('ckp').click()});
 </script>
+<script>if('serviceWorker' in navigator){addEventListener('load',function(){navigator.serviceWorker.register('sw.js').catch(function(){})})}</script>
 </body>
 </html>
